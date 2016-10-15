@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Strona z Linkami</title>
+  <style>
+  table {
+    width: 100%
+  } 
+  th, td {
+    padding: 15px;
+  }  
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }  
+  table#t01 {
+    background-color: red
+  }
+  table#t02{
+    background-color: blue
+  }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Powrot do strony glownej</a>
+</nav>
+<hr>
+<h1>Strona z Tabela</h1>
+<hr>
+<table id="t01">
+  <tr>
+    <th></th>
+    <th>Naglowek 1</th>
+    <th colspan="2" style="color: green">Naglowek 2</th>
+    <th>Naglowek 3</th>
+  </tr>
+  <tr>
+  <th>Naglowek pionowy 1</th>
+  <td>Dane 1</td>
+  <td>Dane 2</td>
+  <td>Dane 3</td>
+  <td>
+    <table id="t02">
+    <caption>Tabela 2</caption>
+    <tr>
+    <td style="color: white">Dane 4.1</td>
+    <td style="color: orange">Dane 4.2</td>
+    </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+  <th rowspan="2" style="color: blue">Naglowek pionowy 2</th>
+    <td>Dane 21</td>
+    <td>Dane 22</td>
+    <td>Dane 23</td>
+    <td>Dane 24</td>
+  </tr>
+  <tr style="color: brown">
+    <td>Dane 31</td>
+    <td>Dane 32</td>
+    <td>Dane 33</td>
+    <td>Dane 34</td>
+  </tr>
+</table>
+</body>
